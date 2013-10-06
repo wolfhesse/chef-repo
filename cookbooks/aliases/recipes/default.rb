@@ -6,9 +6,18 @@
 #
 # All rights reserved - Do Not Redistribute
 #
-# Alias `h` to go home
+# Alias `h` to go home.. and others, etc.
+
+magic_shell_alias 'r' do
+	command 'echo roger'
+end
+
 magic_shell_alias 'g' do
   command 'cd '
+end
+
+magic_shell_alias 'h' do
+	command 'cd ~'
 end
 
 # Alias `sites` to cd into apache
