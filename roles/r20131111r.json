@@ -1,0 +1,11 @@
+{
+  "name": "r20131111r",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[java::oracle_i386]",
+    "recipe[maven]",
+    "recipe[build-essential]",
+    "recipe[mysql]",
+    "recipe[rvm::ruby_193]"
+  ]
+}
