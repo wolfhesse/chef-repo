@@ -51,7 +51,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   # Use VBoxManage to customize the VM. For example to change memory:
   #   vb.customize ["modifyvm", :id, "--memory", "1024"]
-     vb.customize ["modifyvm", :id, "--memory", "384"]
+     vb.customize ["modifyvm", :id, "--memory", "512"]
    end
   #
   # View the documentation for the provider you're using for more
@@ -105,10 +105,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # HTTP instead of HTTPS depending on your configuration. Also change the
   # validation key to validation.pem.
   #
-  # config.vm.provision :chef_client do |chef|
-  #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
-  #   chef.validation_key_path = "ORGNAME-validator.pem"
-  # end
+  ### config.vm.provision :chef_client do |chef|
+     ### chef.chef_server_url = "https://api.opscode.com/organizations/fruehlingsrolle"
+     ### chef.validation_key_path = "fruehlingsrolle-validator.pem"
+     ### chef.validation_client_name = "wolfhesse"
+  ### end
   #
   # If you're using the Opscode platform, your validator client is
   # ORGNAME-validator, replacing ORGNAME with your organization name.

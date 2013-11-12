@@ -1,5 +1,5 @@
 {
-  "name": "r20131111",
+  "name": "wordpress_r",
   "run_list": [
     "recipe[apt]",
     "recipe[apache2]",
