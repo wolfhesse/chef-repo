@@ -1,0 +1,7 @@
+{
+  "name": "magento_r",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[magento]"
+  ]
+}

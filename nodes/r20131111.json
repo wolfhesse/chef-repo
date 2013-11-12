@@ -1,0 +1,9 @@
+{
+  "name": "r20131111",
+  "run_list": [
+    "recipe[aliases]",
+    "recipe[rvm::install]",
+    "recipe[receipe]",
+    "recipe[wordpress]"
+  ]
+}

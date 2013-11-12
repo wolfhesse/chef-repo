@@ -1,0 +1,13 @@
+{
+  "name": "clients",
+  "clients": [
+    "einser1",
+    "einser2",
+    "einser3",
+    "fruehlingsrolle-validator",
+    "lucid31r1",
+    "r20131111",
+    "vagrant-ubuntu-saucy-32",
+    "vagrant.vm"
+  ]
+}

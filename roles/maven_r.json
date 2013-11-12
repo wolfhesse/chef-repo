@@ -1,0 +1,6 @@
+{
+  "name": "maven_r",
+  "run_list": [
+    "recipe[maven]"
+  ]
+}

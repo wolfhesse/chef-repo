@@ -1,0 +1,7 @@
+{
+  "name": "wordpress_r",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[wordpress]"
+  ]
+}
