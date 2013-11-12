@@ -1,0 +1,9 @@
+{
+  "name": "r20131006",
+  "run_list": [
+    "recipe[apt]",
+    "recipe[build-essential]",
+    "recipe[rvm]",
+    "recipe[rvm::ruby_193]"
+  ]
+}
