@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
   # your network.
-  # config.vm.network :public_network
+  config.vm.network :public_network
 
   # If true, then any SSH connections made will enable agent forwarding.
   # Default value: false
@@ -105,10 +105,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # HTTP instead of HTTPS depending on your configuration. Also change the
   # validation key to validation.pem.
   #
-  # config.vm.provision :chef_client do |chef|
-  #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
-  #   chef.validation_key_path = "ORGNAME-validator.pem"
-  # end
+  config.vm.provision :chef_client do |chef|
+     chef.chef_server_url = "https://api.opscode.com/organizations/fruehlingsrolle"
+     chef.validation_key_path = "fruehlingsrolle-validator.pem"
+   end
   #
   # If you're using the Opscode platform, your validator client is
   # ORGNAME-validator, replacing ORGNAME with your organization name.
@@ -116,5 +116,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # If you have your own Chef Server, the default validation client name is
   # chef-validator, unless you changed the configuration.
   #
-  #   chef.validation_client_name = "ORGNAME-validator"
+  #  chef.validation_client_name = "fruehlingsrolle-validator"
 end
